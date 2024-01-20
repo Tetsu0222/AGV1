@@ -1,0 +1,9 @@
+<div class="grid">
+    <mat-card *ngFor="let pokemon of pokemons">
+        <img src="/assets/thumbnails/{{pokemon.id | number:'3.0'}}.png" alt="">
+        <p>{{pokemon.name.japanese}}</p>
+        <button>
+            詳細
+        </button>
+    </mat-card>
+</div>
